@@ -427,6 +427,29 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </div>
+
+        <div class="footer-container-subscribe">
+          <form name="footer" autocomplete="on" novalidate>
+            <label for="footer-subscribe-email">
+              <h2 class="footer-subscribe-title">Subscribe</h2>
+            </label>
+            <div class="container-flex">
+              <input
+                id="footer-subscribe-email"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="footer-subscribe-input"
+              />
+              <button type="submit" class="footer-subscribe-button">
+                <p class="footer-subscribe-button-text">Subscribe</p>
+                <svg class="footer-subscribe-icon">
+                  <use href="./images/icons.svg#icon-send-footer"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -437,6 +460,86 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
+
+          <h2 class="modal-title">
+            Leave your contacts and we will call you back
+          </h2>
+
+          <div class="modal-registration">
+            <form name="backdrop" autocomplete="on" novalidate>
+              <div class="modal-registration-container">
+                <label class="modal-registration-label">
+                  <p class="modal-registration-text">Name</p>
+                  <input
+                    class="modal-registration-input"
+                    type="text"
+                    name="name"
+                  />
+                  <svg class="modal-registration-icon">
+                    <use href="./images/icons.svg#icon-name-modal"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="modal-registration-container">
+                <label class="modal-registration-label">
+                  <p class="modal-registration-text">Phone</p>
+                  <input
+                    class="modal-registration-input"
+                    type="text"
+                    name="phone"
+                  />
+                  <svg class="modal-registration-icon">
+                    <use href="./images/icons.svg#icon-phone-modal"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="modal-registration-container">
+                <label class="modal-registration-label">
+                  <p class="modal-registration-text">Email</p>
+                  <input
+                    class="modal-registration-input"
+                    type="email"
+                    name="email"
+                  />
+                  <svg class="modal-registration-icon">
+                    <use href="./images/icons.svg#icon-email-modal"></use>
+                  </svg>
+                </label>
+              </div>
+              <div class="modal-registration-container">
+                <label>
+                  <p class="modal-registration-text">Comment</p>
+                  <textarea
+                    class="modal-registration-comment"
+                    name="feedback"
+                    placeholder="Text input"
+                  ></textarea>
+                </label>
+              </div>
+              <div class="modal-registration-privacy-container">
+                <input
+                  id="privacy"
+                  class="modal-registration-privacy-input"
+                  type="checkbox"
+                  name="privacy"
+                />
+                <label for="privacy" class="modal-registration-privacy">
+                  <div class="modal-registration-privacy-item">
+                    <svg class="modal-registration-privacy-icon">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                  </div>
+                  <p class="modal-registration-privacy-text">
+                    I accept the terms and conditions of the
+                    <a href="">Privacy Policy</a>
+                  </p>
+                </label>
+              </div>
+              <button type="submit" class="modal-registration-button">
+                Send
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
